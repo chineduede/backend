@@ -1,5 +1,4 @@
-require('dotenv').config()
-const { request, response } = require('express');
+require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
 const Person = require('./models/person');
