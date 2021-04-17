@@ -10,12 +10,17 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "cd C:\\Users\\EDEH-PC\\Desktop\\fullstackopen\\part2\\phonebook\\ && npm run build --prod && xcopy build  C:\\Users\\EDEH-PC\\Desktop\\backend\\build /S /I /E",
+    "push": "git add . && git commit -m 'commit-from-script' && git push heroku master"
   },
   "author": "\"Chinedu Ede\"",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
